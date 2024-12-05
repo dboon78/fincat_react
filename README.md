@@ -1,6 +1,6 @@
-# FinCat is my personal financial portfolio project, this is the React Client part of it.
+# FinCat is my personal financial portfolio project
 
-This project uses a variety of React based plugins and components. 
+This React projectproject uses a variety of React based plugins and components. 
 - Tailwind CSS for mobile-first styling
 - Yup form authentication
 - Toastify for notifications
