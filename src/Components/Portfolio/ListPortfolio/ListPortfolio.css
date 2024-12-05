@@ -1,0 +1,73 @@
+.spin {
+  border: 0;
+  position: relative;
+  border-radius: 50%;
+}
+
+.spin::before,
+.spin::after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.spin::before,
+.spin::after {
+  top: 0;
+  left: 0;
+}
+
+.spin::before {
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.spin:hover::before {
+  border-top-color: #555555;
+  border-right-color: #555555;
+  border-bottom-color: #555555;
+  transition: border-top-color 0.15s linear,
+    border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+
+.spin::after {
+  border: 0 solid transparent;
+  border-radius: 50%;
+}
+
+.spin:hover::after {
+  border-top: 2px solid #555555;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  transform: rotate(270deg);
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s,
+    -webkit-transform 0.4s linear 0s;
+}
+.animated-bottom {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.animated-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px; /* Adjust thickness here */
+  background-color: transparent; /* Change color as needed */
+  transition: width 0.4s ease-out, left 0.4s ease-out;
+}
+
+.animated-bottom:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: gray;
+}
+
+.self-edit-button input[type="radio"] {
+  display: none;
+}

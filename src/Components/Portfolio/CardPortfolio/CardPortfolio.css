@@ -1,0 +1,5 @@
+.holding {
+  transition: transform 0.5s;
+  transform-origin: center;
+  opacity: 1;
+}
