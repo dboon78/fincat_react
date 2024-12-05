@@ -1,5 +1,7 @@
 # FinCat is my personal financial portfolio project
 
+Viewable at [https://fincat.boonifications.com/](https://fincat.boonifications.com/)
+
 This React projectproject uses a variety of React based plugins and components. 
 - Tailwind CSS for mobile-first styling
 - Yup form authentication
